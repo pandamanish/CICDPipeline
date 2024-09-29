@@ -1,19 +1,17 @@
 name: Deploy in EC2 instance
 
-
 on :
   push:
     branches:
-      -main
+      - main
 
   pull_request:
     branches:
-      -main
+      - main
 jobs:
   build: #user defined
     runs-on: ubuntu_latest
-
-
+    
     steps:
       - name: Checkout the code base
         uses: actions/checkout@v4
