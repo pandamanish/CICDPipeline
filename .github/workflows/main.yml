@@ -11,9 +11,9 @@ on :
       -main
 jobs:
   build: #user defined
-  runs-on: ubuntu_latest
+    runs-on: ubuntu_latest
 
 
-  steps:
-    -name: Checkout the code base
-     uses: actions/checkout@v4
+    steps:
+      - name: Checkout the code base
+        uses: actions/checkout@v4
